@@ -24,7 +24,7 @@
         android:layout_centerHorizontal="true"
         android:gravity="center"
         android:layout_marginTop="30dp"
-        android:text="  Enter the Name"
+        android:hint="  Enter the Name"
         android:textSize="30dp" />
     <EditText
         android:id="@+id/searchPerson"
@@ -33,7 +33,7 @@
         android:layout_below="@+id/person"
         android:drawableLeft="@drawable/search"
         android:layout_centerHorizontal="true"
-        android:text="Search the Name"
+        android:hint="Search the Name"
         android:textSize="30dp" />
     <LinearLayout
         android:layout_width="match_parent"
