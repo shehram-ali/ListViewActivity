@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Name Search App"
+        android:textSize="40dp"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/person"
+        android:layout_below="@+id/header"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="  Enter the Name"
+        android:textSize="30dp" />
+    <EditText
+        android:id="@+id/searchPerson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/person"
+        android:drawableLeft="@drawable/search"
+        android:layout_centerHorizontal="true"
+        android:text="Search the Name"
+        android:textSize="30dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+
+        <View
+            android:layout_width="match_parent"
+
+            android:layout_height="10dp"
+            android:background="@color/black"
+            android:layout_marginTop="225dp"
+            />
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn1"
+        android:layout_below="@+id/searchPerson"
+        android:text="  SAVE  "
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn2"
+        android:layout_below="@+id/searchPerson"
+        android:layout_marginLeft="220dp"
+
+        android:text="DELETE"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn3"
+        android:layout_below="@+id/btn1"
+        android:text="UPDATE"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn4"
+        android:layout_below="@+id/btn2"
+        android:layout_marginLeft="220dp"
+
+        android:text="SEARCH"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+
+        <View
+            android:layout_width="match_parent"
+
+            android:layout_height="10dp"
+            android:background="@color/black"
+            android:layout_marginTop="370dp"
+            />
+    </LinearLayout>
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/list"
+        android:layout_below="@+id/btn4"
+        android:layout_marginTop="12dp"/>
+
+
+</RelativeLayout>
